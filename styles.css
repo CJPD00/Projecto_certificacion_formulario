@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+body {
+    background: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7));
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    max-width: 720px;
+    margin-bottom: 2rem;
+}
+
+#title,
+#description {
+    text-align: center;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+}
+
+fieldset {
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    background-color: var(--color-darkblue);
+    opacity: 85%;
+    padding: 40px;
+    border-radius: 3px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 35px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+input[type="submit"]{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    text-align: center;
+    cursor: pointer;
+}
+
+select {
+    color: #495057;
+}
+
+input[type="radio"] {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+input[type="checkbox"] {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+label {
+    display: block;
+}
+
+.p-recomend {
+    margin: 16px 0 0 0;
+}
+
+.improved {
+    margin: 16px 0 0 0;
+}
+
+label[for="feature"] {
+    margin-top: 2rem;
+}
+
+label[for="comments"] {
+    margin-top: 2rem;
+}
+
+.span {
+    margin-left: 0.25rem;
+    font-size: 0.7rem;
+}
+
+.datos{
+    resize: vertical;
+    min-height: 120px;
+}
+
+@media only screen and  (min-width: 0px) and (max-width: 428px){
+
+    body{
+        font-size: 0.8rem;
+    }
+
+    form{
+        padding: 10px;
+    }
+
+    .datos{
+        min-height: 80px;
+    }
+
+}
